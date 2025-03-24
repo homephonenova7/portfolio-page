@@ -8,8 +8,7 @@ const projects = [
     title: "Skill Bridge",
     description:
       "A computer vision based mobile application to help kids with neurodevelopmental disorders improve critical executive functions, everyday life skills, and fundamental vocational abilities",
-    image:
-      "https://media.licdn.com/dms/image/v2/D4E2DAQHrSpKOBTRSRA/profile-treasury-image-shrink_800_800/B4EZWVae0_HMAc-/0/1741968507936?e=1743429600&v=beta&t=Xs5Xu73Jq95mbzGQ7UssWKYKHwkyGIad7HHysWfuWzQ",
+    image: "/images/projects/skill-bridge.jpg",
     tags: [
       "Expo",
       "Android Kotlin Native",
@@ -22,80 +21,71 @@ const projects = [
     id: "project2",
     title: "BookToGo.lk",
     description: "A Real-Time Event Ticketing Full Stack Application",
-    image:
-      "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1764&q=80",
-    tags: ["SpringBoot", "  Angular", "MySQL"],
+    image: "/images/projects/booktogo.jpg",
+    tags: ["SpringBoot", "Angular", "MySQL"],
   },
   {
     id: "project3",
     title: "Sri Dewananda Damma School's Web & Mobile Application",
     description:
-      "A Official website and  Mobile Application for Sri Dewananda Damma School",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+      "A Official website and Mobile Application for Sri Dewananda Damma School",
+    image: "/images/projects/damma-school.jpg",
     tags: ["Expo"],
   },
   {
     id: "project4",
     title: "Stiching Guide Mobile App",
     description: "A mobile application for guiding stiching",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    image: "/images/projects/stitching-guide.jpg",
     tags: ["Expo"],
   },
   {
-    id: "project4",
+    id: "project5",
     title: "Fitness Tracker App",
     description:
       "A mobile application for tracking workouts and nutrition with analytics.",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    image: "/images/projects/fitness-tracker.jpg",
     tags: ["React Native", "Firebase", "Chart.js"],
   },
   {
-    id: "project4",
+    id: "project6",
     title: "Life On Land Website",
     description:
       "A website about United Nations Sustainable Development Goals (SDGs)",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"],
+    image: "/images/projects/life-on-land.jpg",
+    tags: ["React", "CSS", "JavaScript"],
   },
   {
-    id: "project4",
+    id: "project7",
     title: "University Student Activity Management System",
     description:
-      "A mobile application for tracking workouts and nutrition with analytics.",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"],
+      "A comprehensive system for managing university student activities and events.",
+    image: "/images/projects/activity-management.jpg",
+    tags: ["React", "Node.js", "MongoDB"],
   },
   {
-    id: "project4",
+    id: "project8",
     title: "Guts",
     description:
-      "A mobile application for tracking workouts and nutrition with analytics.",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"],
+      "A gaming community platform for connecting players and organizing tournaments.",
+    image: "/images/projects/guts.jpg",
+    tags: ["React", "Firebase", "Socket.io"],
   },
   {
-    id: "project4",
-    title: "Fitness Tracker App",
+    id: "project9",
+    title: "Portfolio Website",
     description:
-      "A mobile application for tracking workouts and nutrition with analytics.",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"],
+      "A responsive portfolio website built with modern web technologies.",
+    image: "/images/projects/portfolio.jpg",
+    tags: ["React", "Framer Motion", "Tailwind CSS"],
   },
   {
-    id: "project4",
-    title: "Fitness Tracker App",
+    id: "project10",
+    title: "Task Management App",
     description:
-      "A mobile application for tracking workouts and nutrition with analytics.",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"],
+      "A productivity application for organizing personal and team tasks.",
+    image: "/images/projects/task-management.jpg",
+    tags: ["React", "Redux", "Firebase"],
   },
 ];
 
