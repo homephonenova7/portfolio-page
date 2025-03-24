@@ -61,7 +61,7 @@ const projects = [
     description:
       "A comprehensive system for managing university student activities and events.",
     image: "/images/projects/activity-management.jpg",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["Java"],
   },
   {
     id: "project8",
@@ -79,14 +79,7 @@ const projects = [
     image: "/images/projects/portfolio.jpg",
     tags: ["React", "Framer Motion", "Tailwind CSS"],
   },
-  {
-    id: "project10",
-    title: "Task Management App",
-    description:
-      "A productivity application for organizing personal and team tasks.",
-    image: "/images/projects/task-management.jpg",
-    tags: ["React", "Redux", "Firebase"],
-  },
+ 
 ];
 
 const ProjectsSection: React.FC = () => {
