@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -15,7 +14,8 @@ const App = () => {
   useEffect(() => {
     // Check if dark mode preference exists in localStorage
     const storedTheme = localStorage.getItem("theme");
-    if (storedTheme === "dark") {
+    // If no theme is stored or theme is dark, use dark mode
+    if (storedTheme === null || storedTheme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");

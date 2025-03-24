@@ -1,4 +1,3 @@
-
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -7,73 +6,97 @@ const projects = [
   {
     id: "project1",
     title: "Skill Bridge",
-    description: "A computer vision based mobile application to help kids with neurodevelopmental disorders improve critical executive functions, everyday life skills, and fundamental vocational abilities",
-    image: "https://media.licdn.com/dms/image/v2/D4E2DAQHrSpKOBTRSRA/profile-treasury-image-shrink_800_800/B4EZWVae0_HMAc-/0/1741968507936?e=1743429600&v=beta&t=Xs5Xu73Jq95mbzGQ7UssWKYKHwkyGIad7HHysWfuWzQ",
-    tags: ["Expo", "Android Kotlin Native", "React Native", "Firebase" , "Mediapipe"]
+    description:
+      "A computer vision based mobile application to help kids with neurodevelopmental disorders improve critical executive functions, everyday life skills, and fundamental vocational abilities",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E2DAQHrSpKOBTRSRA/profile-treasury-image-shrink_800_800/B4EZWVae0_HMAc-/0/1741968507936?e=1743429600&v=beta&t=Xs5Xu73Jq95mbzGQ7UssWKYKHwkyGIad7HHysWfuWzQ",
+    tags: [
+      "Expo",
+      "Android Kotlin Native",
+      "React Native",
+      "Firebase",
+      "Mediapipe",
+    ],
   },
   {
     id: "project2",
     title: "BookToGo.lk",
     description: "A Real-Time Event Ticketing Full Stack Application",
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1764&q=80",
-    tags: ["SpringBoot", "  Angular", "MySQL"]
+    image:
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1764&q=80",
+    tags: ["SpringBoot", "  Angular", "MySQL"],
   },
   {
     id: "project3",
     title: "Sri Dewananda Damma School's Web & Mobile Application",
-    description: "A Official website and  Mobile Application for Sri Dewananda Damma School",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
-    tags: ["Expo"]
+    description:
+      "A Official website and  Mobile Application for Sri Dewananda Damma School",
+    image:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+    tags: ["Expo"],
   },
   {
     id: "project4",
     title: "Stiching Guide Mobile App",
     description: "A mobile application for guiding stiching",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["Expo",]
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    tags: ["Expo"],
   },
   {
     id: "project4",
     title: "Fitness Tracker App",
-    description: "A mobile application for tracking workouts and nutrition with analytics.",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"]
+    description:
+      "A mobile application for tracking workouts and nutrition with analytics.",
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    tags: ["React Native", "Firebase", "Chart.js"],
   },
   {
     id: "project4",
     title: "Life On Land Website",
-    description: "A website about United Nations Sustainable Development Goals (SDGs)",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"]
+    description:
+      "A website about United Nations Sustainable Development Goals (SDGs)",
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    tags: ["React Native", "Firebase", "Chart.js"],
   },
   {
     id: "project4",
     title: "University Student Activity Management System",
-    description: "A mobile application for tracking workouts and nutrition with analytics.",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"]
+    description:
+      "A mobile application for tracking workouts and nutrition with analytics.",
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    tags: ["React Native", "Firebase", "Chart.js"],
   },
   {
     id: "project4",
     title: "Guts",
-    description: "A mobile application for tracking workouts and nutrition with analytics.",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"]
+    description:
+      "A mobile application for tracking workouts and nutrition with analytics.",
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    tags: ["React Native", "Firebase", "Chart.js"],
   },
   {
     id: "project4",
     title: "Fitness Tracker App",
-    description: "A mobile application for tracking workouts and nutrition with analytics.",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"]
+    description:
+      "A mobile application for tracking workouts and nutrition with analytics.",
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    tags: ["React Native", "Firebase", "Chart.js"],
   },
   {
     id: "project4",
     title: "Fitness Tracker App",
-    description: "A mobile application for tracking workouts and nutrition with analytics.",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    tags: ["React Native", "Firebase", "Chart.js"]
-  }
+    description:
+      "A mobile application for tracking workouts and nutrition with analytics.",
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    tags: ["React Native", "Firebase", "Chart.js"],
+  },
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -102,7 +125,9 @@ const ProjectsSection: React.FC = () => {
                 viewport={{ once: true }}
                 className="inline-block"
               >
-                <span className="text-sm font-medium text-foreground/70">FEATURED WORK</span>
+                <span className="text-sm font-medium text-foreground/70">
+                  FEATURED WORK
+                </span>
               </motion.div>
             </span>
           </div>
@@ -133,10 +158,10 @@ const ProjectsSection: React.FC = () => {
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ 
-                  duration: 0.5, 
+                transition={{
+                  duration: 0.5,
                   delay: index * 0.1,
-                  ease: [0.22, 1, 0.36, 1]
+                  ease: [0.22, 1, 0.36, 1],
                 }}
                 viewport={{ once: true }}
                 className="group"
@@ -153,7 +178,10 @@ const ProjectsSection: React.FC = () => {
                   <div className="p-6 flex flex-col flex-grow">
                     <div className="flex gap-2 mb-3 flex-wrap">
                       {project.tags.map((tag) => (
-                        <span key={tag} className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full">
+                        <span
+                          key={tag}
+                          className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded-full"
+                        >
                           {tag}
                         </span>
                       ))}
@@ -164,26 +192,29 @@ const ProjectsSection: React.FC = () => {
                     <p className="text-foreground/70 mb-4 flex-grow">
                       {project.description}
                     </p>
-                    <button
-                      onClick={() => navigate(`/project/${project.id}`)}
-                      className="mt-auto text-sm font-medium text-primary hover:text-primary/80 flex items-center transition-colors"
-                    >
-                      View Project
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
+                    {/* Temporarily hidden - can be re-enabled later */}
+                    {false && (
+                      <button
+                        onClick={() => navigate(`/project/${project.id}`)}
+                        className="mt-auto text-sm font-medium text-primary hover:text-primary/80 flex items-center transition-colors"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </button>
+                        View Project
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M9 5l7 7-7 7"
+                          />
+                        </svg>
+                      </button>
+                    )}
                   </div>
                 </div>
               </motion.div>
