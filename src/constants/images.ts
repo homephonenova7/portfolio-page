@@ -5,8 +5,8 @@ const images = {
   stichingguide : "/images/projects/stitching-guide.jpg",
   skillbridgereact : "/images/projects/SkillBridge/react.png",
   skillbridhenext : "/images/projects/SkillBridge/next.png",
-  sk1 : "/images/projects/SkillBridge/1.png",
-  sk2 : "/images/projects/SkillBridge/2.png",
+  sk1 : "/images/projects/SkillBridge/1.jpg",
+  sk2 : "/images/projects/SkillBridge/2.jpg",
 };
 
 export default images;
