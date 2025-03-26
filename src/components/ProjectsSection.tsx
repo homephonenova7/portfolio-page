@@ -176,7 +176,7 @@ const ProjectsSection: React.FC = () => {
                       {project.description}
                     </p>
                     {/* Temporarily hidden - can be re-enabled later */}
-                    {false && (
+                    
                       <button
                         onClick={() => navigate(`/project/${project.id}`)}
                         className="mt-auto text-sm font-medium text-primary hover:text-primary/80 flex items-center transition-colors"
@@ -197,7 +197,7 @@ const ProjectsSection: React.FC = () => {
                           />
                         </svg>
                       </button>
-                    )}
+                    
                   </div>
                 </div>
               </motion.div>
