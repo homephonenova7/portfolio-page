@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Github, ExternalLink } from "lucide-react";
+import images from "../constants/images";
 
 
 interface Project {
@@ -29,7 +30,7 @@ const projects: Project[] = [
     github: "https://github.com/dileepa/ecommerce-platform",
     liveDemo: "https://ecommerce-platform-demo.dileepa.dev",
     screenshots: [
-      "images/projects/SkillBridge/1.jpg",
+      images.sk1,
       "images/projects/SkillBridge/2.jpg",
       "images/projects/SkillBridge/3.jpg",
       "images/projects/SkillBridge/4.jpg",
