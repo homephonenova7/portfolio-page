@@ -1,5 +1,5 @@
 const images = {
-    booktogothumb : require('../../public/images/projects/BookToGo.lk/thumb.png'),
-}
+  booktogothumb: "/images/projects/BookToGo.lk/thumb.png",
+};
 
-export default images ;
+export default images;
