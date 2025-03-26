@@ -9,7 +9,7 @@ const projects = [
     title: "Skill Bridge",
     description:
       "A computer vision based mobile application to help kids with neurodevelopmental disorders improve critical executive functions, everyday life skills, and fundamental vocational abilities",
-    image: "/images/projects/skill-bridge.jpg",
+    image: images.skillbridgethumb,
     tags: [
       "Expo",
       "Android Kotlin Native",
@@ -27,10 +27,10 @@ const projects = [
   },
   {
     id: "project3",
-    title: "Sri Dewananda Damma School's Web & Mobile Application",
+    title: "Sri Dewananda Damma School'Mobile Application",
     description:
       "A Official website and Mobile Application for Sri Dewananda Damma School",
-    image: "/images/projects/damma-school.jpg",
+    image: images.sddsthumb,
     tags: ["Expo"],
   },
   {
