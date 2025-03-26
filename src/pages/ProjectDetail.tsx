@@ -4,6 +4,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Github, ExternalLink } from "lucide-react";
 
+
 interface Project {
   id: string;
   title: string;
@@ -28,10 +29,24 @@ const projects: Project[] = [
     github: "https://github.com/dileepa/ecommerce-platform",
     liveDemo: "https://ecommerce-platform-demo.dileepa.dev",
     screenshots: [
-      "https://images.unsplash.com/photo-1561069934-eee225952461?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      "images/projects/SkillBridge/1.jpg",
+      "images/projects/SkillBridge/2.jpg",
+      "images/projects/SkillBridge/3.jpg",
+      "images/projects/SkillBridge/4.jpg",
+      "images/projects/SkillBridge/5.jpg",
+      "images/projects/SkillBridge/6.jpg",
+      "images/projects/SkillBridge/7.jpg",
+      "images/projects/SkillBridge/8.jpg",
+      "images/projects/SkillBridge/9.jpg",
+      "images/projects/SkillBridge/10.jpg",
+      "images/projects/SkillBridge/11.jpg",
+      "images/projects/SkillBridge/12.jpg",
+      "images/projects/SkillBridge/13.jpg",
+      "images/projects/SkillBridge/14.jpg",
+      "images/projects/SkillBridge/15.jpg",
+      "images/projects/SkillBridge/16.jpg",
     ],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://youtu.be/QGpfjjG4KLc"
   },
   {
     id: "project2",
