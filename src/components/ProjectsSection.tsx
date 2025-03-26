@@ -21,7 +21,7 @@ const projects = [
     id: "project2",
     title: "BookToGo.lk",
     description: "A Real-Time Event Ticketing Full Stack Application",
-    image: "/images/projects/booktogo.jpg",
+    image: require("../../public/images/projects/BookToGo.lk/thumb.png"),
     tags: ["SpringBoot", "Angular", "MySQL"],
   },
   {
