@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import images from "../constants/images"
 
 const projects = [
   {
@@ -21,7 +22,7 @@ const projects = [
     id: "project2",
     title: "BookToGo.lk",
     description: "A Real-Time Event Ticketing Full Stack Application",
-    image: require("../../public/images/projects/BookToGo.lk/thumb.png"),
+    image: images.booktogothumb,
     tags: ["SpringBoot", "Angular", "MySQL"],
   },
   {
