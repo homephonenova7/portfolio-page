@@ -45,7 +45,7 @@ const projects = [
     title: "Fitness Tracker App",
     description:
       "A mobile application for tracking workouts and nutrition with analytics.",
-    image: "/images/projects/fitness-tracker.jpg",
+    image: images.skillbridgethumb,
     tags: ["React Native", "Firebase", "Chart.js"],
   },
   {
