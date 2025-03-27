@@ -9,7 +9,7 @@ const skills = [
     name: "Java",
     icon: "☕",
     description:
-      "Building robust, scalable backend systems and enterprise applications with Java SE/EE",
+      "Building robust, scalable backend systems and enterprise applications with Java ",
   },
   {
     name: "React",
