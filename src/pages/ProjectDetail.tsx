@@ -1,10 +1,8 @@
-
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowLeft, Github, ExternalLink } from "lucide-react";
 import images from "../constants/images";
-
 
 interface Project {
   id: string;
@@ -22,75 +20,97 @@ interface Project {
 const projects: Project[] = [
   {
     id: "project1",
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce application built with React, Node.js, and MongoDB.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2089&q=80",
-    detailedDescription: "This e-commerce platform provides a complete solution for online shopping with features like product search, filtering, user authentication, cart management, and payment processing. The application is built with a React frontend, Node.js backend, and MongoDB database, following best practices for scalability and security.",
-    technologies: ["React", "Node.js", "Express", "MongoDB", "Redux", "JWT", "Stripe API"],
-    github: "https://github.com/dileepa/ecommerce-platform",
-    liveDemo: "https://ecommerce-platform-demo.dileepa.dev",
-    screenshots: [
-      images.sk1,
-      "images/projects/SkillBridge/2.jpg",
-      "images/projects/SkillBridge/3.jpg",
-      "images/projects/SkillBridge/4.jpg",
-      "images/projects/SkillBridge/5.jpg",
-      "images/projects/SkillBridge/6.jpg",
-      "images/projects/SkillBridge/7.jpg",
-      "images/projects/SkillBridge/8.jpg",
-      "images/projects/SkillBridge/9.jpg",
-      "images/projects/SkillBridge/10.jpg",
-      "images/projects/SkillBridge/11.jpg",
-      "images/projects/SkillBridge/12.jpg",
-      "images/projects/SkillBridge/13.jpg",
-      "images/projects/SkillBridge/14.jpg",
-      "images/projects/SkillBridge/15.jpg",
-      "images/projects/SkillBridge/16.jpg",
+    title:
+      "Skill Bridge - a computer vision based mobile application for children with neurodevelopmental disorders",
+    description:
+      "SkillBridge – A cutting-edge computer vision-based learning app designed to support skill development in children with neurodevelopmental disorders.",
+    image: images.skillbridgethumb,
+    detailedDescription:
+      "SkillBridge – A cutting-edge computer vision-based learning app designed to support skill development in children with neurodevelopmental disorders. Built with Expo (React Native) for cross-platform compatibility and enhanced with Kotlin Native Modules for seamless integration of advanced functionalities. The app leverages MediaPipe for real-time hand gesture and facial recognition, enabling intuitive, gesture-driven interactive games that promote motor skills, cognitive abilities, and social engagement.\n\nKey features include:\n\nAdaptive UI: Tailored to individual learning needs, ensuring accessibility and engagement.\n\nGesture-Controlled Learning: Enables interaction through hand movements, fostering active participation.\n\nInteractive Games: Designed to develop fine motor skills, attention, and cognitive flexibility.\n\nProgress Tracking: Monitors skill development and provides insights for educators and caregivers.\n\nAndroid Compatibility: Optimized for a smooth user experience on Android devices.\n\nSkillBridge bridges the gap between traditional learning and modern assistive technology, empowering children with engaging, intuitive, and effective skill-building experiences.",
+    technologies: [
+      "Expo",
+      "React Native",
+      "MediaPipe",
+      "Android Kotlin Native",
+      "Firebase",
     ],
-    videoUrl: "https://youtu.be/QGpfjjG4KLc"
+    github: "https://github.com/dileepapeiris/SkillBridge-mobile-App",
+    liveDemo: "https://www.youtube.com/watch?v=KD801dvijow",
+    screenshots: [images.sk1, images.sk2],
+    videoUrl: "https://www.youtube.com/embed/KD801dvijow",
   },
   {
     id: "project2",
-    title: "Smart Home Dashboard",
-    description: "An IoT dashboard for monitoring and controlling smart home devices.",
-    image: "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1764&q=80",
-    detailedDescription: "This smart home dashboard allows users to monitor and control their IoT devices from a single interface. It integrates with various smart home protocols and provides real-time data visualization, automation rules, and voice control capabilities. The dashboard is built with React for the frontend and uses MQTT for real-time device communication.",
-    technologies: ["React", "MQTT", "Chart.js", "Node.js", "WebSockets", "Raspberry Pi"],
+    title: "BookToGo.lk",
+    description:
+      "An IoT dashboard for monitoring and controlling smart home devices.",
+    image:
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1764&q=80",
+    detailedDescription:
+      "This smart home dashboard allows users to monitor and control their IoT devices from a single interface. It integrates with various smart home protocols and provides real-time data visualization, automation rules, and voice control capabilities. The dashboard is built with React for the frontend and uses MQTT for real-time device communication.",
+    technologies: [
+      "React",
+      "MQTT",
+      "Chart.js",
+      "Node.js",
+      "WebSockets",
+      "Raspberry Pi",
+    ],
     github: "https://github.com/dileepa/smart-home-dashboard",
     screenshots: [
       "https://images.unsplash.com/photo-1563974318767-a4de855d7b43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      "https://images.unsplash.com/photo-1585058558967-eeb3f12928e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-    ]
+      "https://images.unsplash.com/photo-1585058558967-eeb3f12928e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    ],
   },
   {
     id: "project3",
     title: "AI Learning Platform",
-    description: "An interactive platform for learning AI and machine learning concepts.",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
-    detailedDescription: "This AI learning platform provides interactive tutorials, exercises, and visualizations to help users understand AI and machine learning concepts. It includes hands-on coding exercises with TensorFlow and PyTorch, as well as visualization tools to explain complex algorithms. The platform is built with React and Python, using WebAssembly to run Python code in the browser.",
-    technologies: ["React", "Python", "TensorFlow", "PyTorch", "WebAssembly", "D3.js"],
+    description:
+      "An interactive platform for learning AI and machine learning concepts.",
+    image:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1965&q=80",
+    detailedDescription:
+      "This AI learning platform provides interactive tutorials, exercises, and visualizations to help users understand AI and machine learning concepts. It includes hands-on coding exercises with TensorFlow and PyTorch, as well as visualization tools to explain complex algorithms. The platform is built with React and Python, using WebAssembly to run Python code in the browser.",
+    technologies: [
+      "React",
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "WebAssembly",
+      "D3.js",
+    ],
     github: "https://github.com/dileepa/ai-learning-platform",
     liveDemo: "https://ai-learning.dileepa.dev",
     screenshots: [
       "https://images.unsplash.com/photo-1535378620166-273708d44e4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+      "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
     ],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
   {
     id: "project4",
     title: "Fitness Tracker App",
-    description: "A mobile application for tracking workouts and nutrition with analytics.",
-    image: "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    detailedDescription: "This fitness tracker app helps users track their workouts, nutrition, and health metrics. It provides personalized recommendations based on user goals and analytics to visualize progress over time. The app is built with React Native for cross-platform mobile support and uses Firebase for real-time data synchronization and user authentication.",
-    technologies: ["React Native", "Firebase", "Chart.js", "Expo", "Redux", "Google Fit API"],
+    description:
+      "A mobile application for tracking workouts and nutrition with analytics.",
+    image:
+      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    detailedDescription:
+      "This fitness tracker app helps users track their workouts, nutrition, and health metrics. It provides personalized recommendations based on user goals and analytics to visualize progress over time. The app is built with React Native for cross-platform mobile support and uses Firebase for real-time data synchronization and user authentication.",
+    technologies: [
+      "React Native",
+      "Firebase",
+      "Chart.js",
+      "Expo",
+      "Redux",
+      "Google Fit API",
+    ],
     github: "https://github.com/dileepa/fitness-tracker-app",
     screenshots: [
       "https://images.unsplash.com/photo-1579458342504-f5e85831cbf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
     ],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  }
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+  },
 ];
 
 const ProjectDetail: React.FC = () => {
@@ -102,8 +122,8 @@ const ProjectDetail: React.FC = () => {
   useEffect(() => {
     // Simulate loading
     setLoading(true);
-    const foundProject = projects.find(p => p.id === id);
-    
+    const foundProject = projects.find((p) => p.id === id);
+
     // Simulate API call
     setTimeout(() => {
       setProject(foundProject || null);
@@ -124,7 +144,7 @@ const ProjectDetail: React.FC = () => {
       <div className="min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-2xl font-bold mb-4">Project not found</h1>
         <button
-          onClick={() => navigate('/')}
+          onClick={() => navigate("/")}
           className="flex items-center text-primary hover:text-primary/80"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
@@ -147,7 +167,7 @@ const ProjectDetail: React.FC = () => {
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
-          onClick={() => navigate('/')}
+          onClick={() => navigate("/")}
           className="flex items-center text-foreground/70 hover:text-primary mb-8 transition-colors"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
@@ -164,7 +184,7 @@ const ProjectDetail: React.FC = () => {
           >
             {project.title}
           </motion.h1>
-          
+
           <motion.div
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -196,24 +216,26 @@ const ProjectDetail: React.FC = () => {
                 alt={project.title}
                 className="w-full h-80 object-cover"
               />
-              
+
               <div className="p-6">
-                <h2 className="text-xl font-semibold mb-4">About the Project</h2>
+                <h2 className="text-xl font-semibold mb-4">
+                  About the Project
+                </h2>
                 <p className="text-foreground/80 whitespace-pre-line">
                   {project.detailedDescription}
                 </p>
-                
+
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+                    className="flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
                   >
                     <Github className="mr-2 h-4 w-4" />
                     View on GitHub
                   </a>
-                  
+
                   {project.liveDemo && (
                     <a
                       href={project.liveDemo}
