@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import images from "../constants/images"
+import images from "../constants/images";
 
 const projects = [
   {
@@ -21,64 +21,32 @@ const projects = [
   {
     id: "project2",
     title: "BookToGo.lk",
-    description: "A Real-Time Event Ticketing Full Stack Application",
+    description:
+      "A thread-safe ticket booking platform built with Spring Boot, Angular and MySQL uding object oriented programming principles , concurrent programming concepts.",
     image: images.booktogothumb,
-    tags: ["SpringBoot", "Angular", "MySQL"],
+    tags: [
+      "Spring Boot",
+      "Angular",
+      "MySQL",
+      "REST API",
+      "Concurrent Programming",
+      "Java",
+    ],
   },
   {
     id: "project3",
     title: "Sri Dewananda Damma School'Mobile Application",
-    description:
-      "A Official website and Mobile Application for Sri Dewananda Damma School",
+    description: "A Official Mobile Application of Sri Dewananda Damma School",
     image: images.sddsthumb,
-    tags: ["Expo"],
+    tags: ["Projects for real clients"],
   },
   {
     id: "project4",
-    title: "Stiching Guide Mobile App",
-    description: "A mobile application for guiding stiching",
-    image: "/images/projects/stitching-guide.jpg",
-    tags: ["Expo"],
-  },
-  {
-    id: "project5",
-    title: "Fitness Tracker App",
+    title: "Stitching Guide Mobile App",
     description:
-      "A mobile application for tracking workouts and nutrition with analytics.",
-    image: images.skillbridgethumb,
-    tags: ["React Native", "Firebase", "Chart.js"],
-  },
-  {
-    id: "project6",
-    title: "Life On Land Website",
-    description:
-      "A website about United Nations Sustainable Development Goals (SDGs)",
-    image: "/images/projects/life-on-land.jpg",
-    tags: ["React", "CSS", "JavaScript"],
-  },
-  {
-    id: "project7",
-    title: "University Student Activity Management System",
-    description:
-      "A comprehensive system for managing university student activities and events.",
-    image: "/images/projects/activity-management.jpg",
-    tags: ["Java"],
-  },
-  {
-    id: "project8",
-    title: "Guts",
-    description:
-      "A gaming community platform for connecting players and organizing tournaments.",
-    image: "/images/projects/guts.jpg",
-    tags: ["React", "Firebase", "Socket.io"],
-  },
-  {
-    id: "project9",
-    title: "Portfolio Website",
-    description:
-      "A responsive portfolio website built with modern web technologies.",
-    image: "/images/projects/portfolio.jpg",
-    tags: ["React", "Framer Motion", "Tailwind CSS"],
+      "An interactive mobile application providing step-by-step stitching guidance with voice instructions and GIF animations",
+    image: images.stitchingthumb,
+    tags: ["Expo", "React Native", "Expo Speech", "Animation"],
   },
 ];
 
@@ -139,6 +107,7 @@ const ProjectsSection: React.FC = () => {
             {projects.map((project, index) => (
               <motion.div
                 key={project.id}
+                data-project-id={project.id} // Add this attribute
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{
@@ -176,28 +145,27 @@ const ProjectsSection: React.FC = () => {
                       {project.description}
                     </p>
                     {/* Temporarily hidden - can be re-enabled later */}
-                    
-                      <button
-                        onClick={() => navigate(`/project/${project.id}`)}
-                        className="mt-auto text-sm font-medium text-primary hover:text-primary/80 flex items-center transition-colors"
+
+                    <button
+                      onClick={() => navigate(`/project/${project.id}`)}
+                      className="mt-auto text-sm font-medium text-primary hover:text-primary/80 flex items-center transition-colors"
+                    >
+                      View Project
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
                       >
-                        View Project
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-1"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M9 5l7 7-7 7"
-                          />
-                        </svg>
-                      </button>
-                    
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </motion.div>

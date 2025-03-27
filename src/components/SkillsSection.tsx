@@ -7,44 +7,57 @@ import { ScrollArea } from "./ui/scroll-area";
 const skills = [
   {
     name: "Java",
-    icon: "⚡️",
+    icon: "☕",
     description:
-      "Building dynamic web applications with vanilla JS and modern frameworks",
-  },
-  {
-    name: "MySql",
-    icon: "🎨",
-    description: "Designing intuitive and accessible user experiences",
-  },
-  {
-    name: "Android Native Developmnet",
-    icon: "⚛️",
-    description: "Creating responsive and interactive user interfaces",
+      "Building robust, scalable backend systems and enterprise applications with Java SE/EE",
   },
   {
     name: "React",
     icon: "⚛️",
-    description: "Creating responsive and interactive user interfaces",
+    description:
+      "Creating responsive, interactive user interfaces with React's component-based architecture",
   },
   {
     name: "Next.js",
-    icon: "🚀",
-    description: "Developing scalable backend services and APIs",
+    icon: "▲",
+    description:
+      "Developing high-performance web applications with server-side rendering and static generation",
   },
   {
-    name: "FireBase",
-    icon: "📝",
-    description: "Writing type-safe code for robust applications",
+    name: "Expo",
+    icon: "📱",
+    description:
+      "Streamlining mobile development workflow with unified tooling and components",
+  },
+  {
+    name: "React Native",
+    icon: "📲",
+    description:
+      "Building cross-platform mobile applications with native performance using JavaScript",
+  },
+  {
+    name: "Spring Boot",
+    icon: "🍃",
+    description:
+      "Creating production-ready microservices and API endpoints with minimal configuration",
+  },
+  {
+    name: "MySQL",
+    icon: "🗄️",
+    description:
+      "Designing and optimizing relational databases with a focus on performance and data integrity",
   },
   {
     name: "Python",
     icon: "🐍",
-    description: "Data analysis, automation and backend development",
+    description:
+      "Implementing data analysis, automation, and backend services with clean, readable code",
   },
   {
-    name: "UI/UX Design",
-    icon: "🎨",
-    description: "Designing intuitive and accessible user experiences",
+    name: "Android Native",
+    icon: "🤖",
+    description:
+      "Developing high-performance Android applications using Kotlin and Java with the Android SDK",
   },
 ];
 

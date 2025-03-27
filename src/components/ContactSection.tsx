@@ -1,7 +1,12 @@
-
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Github, Linkedin, Mail, MessageSquare } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  Mail,
+  MessageSquare,
+  AlertCircle,
+} from "lucide-react";
 
 const ContactSection: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -47,21 +52,33 @@ const ContactSection: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-center">
                 <Mail className="w-5 h-5 text-primary mr-3" />
-                <a href="mailto:contact@dileepa.dev" className="text-foreground hover:text-primary transition-colors">
-                  contact@dileepa.dev
-                </a>
-              </div>
-              <div className="flex items-center">
-                <Linkedin className="w-5 h-5 text-primary mr-3" />
-                <a href="https://linkedin.com/in/dileepa" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-                  linkedin.com/in/dileepa
+                <a
+                  href="mailto:dileepapeiris5@gmail.com"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  dileepapeiris5@gmail.com
                 </a>
               </div>
               <div className="flex items-center">
                 <Github className="w-5 h-5 text-primary mr-3" />
-                <a href="https://github.com/dileepa" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors">
-                  github.com/dileepa
+                <a
+                  href="https://github.com/dileepapeiris"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-foreground hover:text-primary transition-colors"
+                >
+                  github.com/dileepapeiris
                 </a>
+              </div>
+              <div className="flex items-center">
+                <Linkedin className="w-5 h-5 text-primary/50 mr-3" />
+                <span className="text-foreground/50 flex items-center">
+                  LinkedIn
+                  <span className="ml-2 text-sm bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 px-2 py-0.5 rounded-full flex items-center">
+                    <AlertCircle className="w-3 h-3 mr-1" />
+                    Currently blocked
+                  </span>
+                </span>
               </div>
             </div>
 
@@ -69,7 +86,7 @@ const ContactSection: React.FC = () => {
               <h4 className="text-lg font-medium mb-3">Follow Me</h4>
               <div className="flex space-x-3">
                 <a
-                  href="https://github.com/dileepa"
+                  href="https://github.com/dileepapeiris"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center hover:bg-primary/10 transition-colors"
@@ -77,19 +94,17 @@ const ContactSection: React.FC = () => {
                   <Github className="w-5 h-5 text-foreground" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/dileepa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center hover:bg-primary/10 transition-colors"
-                >
-                  <Linkedin className="w-5 h-5 text-foreground" />
-                </a>
-                <a
-                  href="mailto:contact@dileepa.dev"
+                  href="mailto:dileepapeiris5@gmail.com"
                   className="w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center hover:bg-primary/10 transition-colors"
                 >
                   <Mail className="w-5 h-5 text-foreground" />
                 </a>
+                <div
+                  className="w-10 h-10 rounded-full bg-foreground/5 flex items-center justify-center opacity-50 cursor-not-allowed"
+                  title="LinkedIn currently blocked"
+                >
+                  <Linkedin className="w-5 h-5 text-foreground/50" />
+                </div>
               </div>
             </div>
           </motion.div>
@@ -104,7 +119,10 @@ const ContactSection: React.FC = () => {
             <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
             <form className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-foreground mb-1"
+                >
                   Name
                 </label>
                 <input
@@ -116,7 +134,10 @@ const ContactSection: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-foreground mb-1"
+                >
                   Email
                 </label>
                 <input
@@ -128,7 +149,10 @@ const ContactSection: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-foreground mb-1"
+                >
                   Message
                 </label>
                 <textarea
@@ -141,7 +165,7 @@ const ContactSection: React.FC = () => {
               </div>
               <button
                 type="submit"
-                className="w-full py-2 px-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50"
+                className="w-full py-2 px-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50"
               >
                 <div className="flex items-center justify-center">
                   <MessageSquare className="w-4 h-4 mr-2" />

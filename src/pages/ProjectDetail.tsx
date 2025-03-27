@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Github, ExternalLink } from "lucide-react";
+import { ArrowLeft, Github, ExternalLink, ArrowUp } from "lucide-react";
 import images from "../constants/images";
 
 interface Project {
@@ -36,7 +36,24 @@ const projects: Project[] = [
     ],
     github: "https://github.com/dileepapeiris/SkillBridge-mobile-App",
     liveDemo: "https://www.youtube.com/watch?v=KD801dvijow",
-    screenshots: [images.sk1, images.sk2],
+    screenshots: [
+      images.sk1,
+      images.sk2,
+      images.sk3,
+      images.sk4,
+      images.sk5,
+      images.sk6,
+      images.sk7,
+      images.sk8,
+      images.sk9,
+      images.sk10,
+      images.sk11,
+      images.sk12,
+      images.sk13,
+      images.sk14,
+      images.sk15,
+      images.sk16,
+    ],
     videoUrl: "https://www.youtube.com/embed/KD801dvijow",
   },
   {
@@ -56,7 +73,8 @@ const projects: Project[] = [
       "Java",
       "TypeScript",
     ],
-    github: "https://github.com/dileepa/BookToGo.lk",
+    github:
+      "https://github.com/dileepapeiris/BookToGo.lk-a-Real-Time-Event-Ticketing-Full-Stack-Application",
     liveDemo: "https://www.youtube.com/watch?v=QGpfjjG4KLc",
     screenshots: [
       images.booktogo1,
@@ -78,6 +96,70 @@ const projects: Project[] = [
   },
   {
     id: "project3",
+    title: "Sri Dewananda Damma School Mobile Application",
+    description:
+      "A comprehensive mobile application for Sri Dewananda Damma School",
+    image: images.sddsthumb,
+    detailedDescription:
+      "This project involved developing both an official mobile application for Sri Dewananda Damma School, designed to enhance communication between the school, students, and parents.\n\nThe mobile application provides several key features including:\n\n- Real-time announcements and notifications for school events\n- Digital access to study materials and resources\n- Parent-teacher communication portal\n- School calendar and event scheduling\n- Photo and video galleries of school activities\n\n\nThe complementary application serves as an administrative hub and public-facing platform, showcasing the school's achievements, curriculum, and facilities while providing a content management system for school staff.",
+    technologies: ["Projects for real clients"],
+    github:
+      "https://github.com/dileepapeiris/Official-Mobile-Application-Of-Sri-Dewananada-Damma-School",
+    liveDemo: "https://www.youtube.com/watch?v=6-OrXYGvTvI",
+    screenshots: [
+      images.sdds1,
+      images.sdds2,
+      images.sdds3,
+      images.sdds4,
+      images.sdds5,
+      images.sdds6,
+      images.sdds7,
+      images.sdds8,
+      images.sdds9,
+      images.sdds10,
+      images.sdds11,
+      images.sdds12,
+      images.sdds13,
+      images.sdds14,
+      images.sdds15,
+      images.sdds16,
+      images.sdds17,
+      images.sdds18,
+      images.sdds19,
+    ],
+    videoUrl: "https://www.youtube.com/embed/6-OrXYGvTvI",
+  },
+  {
+    id: "project4",
+    title: "Stitching Guide Mobile App",
+    description:
+      "An interactive mobile application that provides step-by-step stitching guidance with voice instructions",
+    image: images.stitchingthumb,
+    detailedDescription:
+      "The Stitching Guide Mobile App is a comprehensive learning tool designed to help users master stitching techniques through an interactive and accessible interface. Built with Expo (React Native), this application combines visual guidance with audio instructions to create an immersive learning experience.\n\n🧐 Key Features:\n\n✅ Expo Speech Integration – The app leverages Expo Speech to provide audio descriptions for each stitching step, making it accessible for users who prefer auditory learning or have visual impairments.\n\n✅ Seven Detailed Steps – The application covers essential stitching techniques through a structured seven-step process, each with clear instructions and visual aids.\n\n✅ GIF Animations – Dynamic visual demonstrations show the exact movements required for each stitch, making it easier to understand complex techniques.\n\n✅ Rich UI – The user interface is designed with simplicity and engagement in mind, featuring intuitive navigation and visually appealing elements.\n\n✅ Cross-Platform Compatibility – Built with Expo, the app runs seamlessly on both Android and iOS devices without requiring separate codebases.\n\n🛠️ Tech Stack:\n\n- Framework: Expo (React Native)\n- Speech API: Expo Speech for audio instructions\n- Media Support: GIF animations for step-by-step visual guidance\n- State Management: React Hooks for efficient state handling\n\nThis project demonstrates my ability to create educational applications that combine multiple sensory inputs (visual and auditory) to enhance the learning experience, while maintaining a clean and accessible user interface.",
+    technologies: [
+      "Expo",
+      "React Native",
+      "Expo Speech",
+      "React Hooks",
+      "Animation",
+      "UI/UX Design",
+    ],
+    github: "https://github.com/dileepapeiris/Stiching-Guide-Mobile-App",
+    liveDemo: "https://www.youtube.com/watch?v=S6F01OS9RwI",
+    screenshots: [
+      images.stitching7,
+      images.stitching1,
+      images.stitching2,
+      images.stitching3,
+      images.stitching4,
+      images.stitching5,
+      images.stitching6,
+    ],
+    videoUrl: "https://www.youtube.com/embed/S6F01OS9RwI",
+  },
+  {
+    id: "project5",
     title: "AI Learning Platform",
     description:
       "An interactive platform for learning AI and machine learning concepts.",
@@ -101,30 +183,6 @@ const projects: Project[] = [
     ],
     videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
   },
-  {
-    id: "project4",
-    title: "Fitness Tracker App",
-    description:
-      "A mobile application for tracking workouts and nutrition with analytics.",
-    image:
-      "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
-    detailedDescription:
-      "This fitness tracker app helps users track their workouts, nutrition, and health metrics. It provides personalized recommendations based on user goals and analytics to visualize progress over time. The app is built with React Native for cross-platform mobile support and uses Firebase for real-time data synchronization and user authentication.",
-    technologies: [
-      "React Native",
-      "Firebase",
-      "Chart.js",
-      "Expo",
-      "Redux",
-      "Google Fit API",
-    ],
-    github: "https://github.com/dileepa/fitness-tracker-app",
-    screenshots: [
-      "https://images.unsplash.com/photo-1579458342504-f5e85831cbf5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    ],
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-  },
 ];
 
 const ProjectDetail: React.FC = () => {
@@ -132,6 +190,7 @@ const ProjectDetail: React.FC = () => {
   const navigate = useNavigate();
   const [project, setProject] = useState<Project | null>(null);
   const [loading, setLoading] = useState(true);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
     // Simulate loading
@@ -143,7 +202,68 @@ const ProjectDetail: React.FC = () => {
       setProject(foundProject || null);
       setLoading(false);
     }, 500);
+
+    // Add scroll listener for back to top button
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 300);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [id]);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  // New navigation function that includes project ID in state
+  const navigateToProjectsSection = () => {
+    navigate("/", {
+      state: {
+        scrollToSection: "projects",
+        highlightProject: id,
+      },
+    });
+  };
+
+  const navigateToHomeProjects = () => {
+    // Navigate back to the homepage
+    navigate("/");
+
+    // Use setTimeout to ensure navigation happens before scrolling
+    setTimeout(() => {
+      const projectsSection = document.getElementById("projects");
+      if (projectsSection) {
+        const yOffset = -80; // Adjust based on your header height
+        const y =
+          projectsSection.getBoundingClientRect().top +
+          window.pageYOffset +
+          yOffset;
+
+        window.scrollTo({
+          top: y,
+          behavior: "smooth",
+        });
+
+        // Optional: Highlight the current project in the list
+        setTimeout(() => {
+          const projectElement = document.querySelector(
+            `[data-project-id="${id}"]`
+          );
+          if (projectElement) {
+            projectElement.classList.add("highlight-project");
+            // Remove the highlight after a short delay
+            setTimeout(() => {
+              projectElement.classList.remove("highlight-project");
+            }, 2000);
+          }
+        }, 800);
+      }
+    }, 100);
+  };
 
   if (loading) {
     return (
@@ -176,12 +296,12 @@ const ProjectDetail: React.FC = () => {
         transition={{ duration: 0.5 }}
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12"
       >
-        {/* Back button */}
+        {/* Back button - Updated to use the new navigation function */}
         <motion.button
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
-          onClick={() => navigate("/")}
+          onClick={navigateToHomeProjects}
           className="flex items-center text-foreground/70 hover:text-primary mb-8 transition-colors"
         >
           <ArrowLeft className="mr-2 h-4 w-4" />
@@ -321,6 +441,23 @@ const ProjectDetail: React.FC = () => {
           </motion.div>
         </div>
       </motion.div>
+
+      {/* Back to Top Button */}
+      <motion.button
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{
+          opacity: showBackToTop ? 1 : 0,
+          scale: showBackToTop ? 1 : 0.8,
+          y: showBackToTop ? 0 : 20,
+        }}
+        transition={{ duration: 0.3 }}
+        onClick={scrollToTop}
+        className="fixed bottom-8 right-8 bg-primary text-primary-foreground p-3 rounded-full shadow-lg hover:bg-primary/90 transition-all z-50"
+        aria-label="Back to top"
+        style={{ visibility: showBackToTop ? "visible" : "hidden" }}
+      >
+        <ArrowUp className="h-5 w-5" />
+      </motion.button>
     </div>
   );
 };
