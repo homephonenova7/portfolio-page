@@ -152,12 +152,6 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.5, delay: 1.5 }}
             className="mt-12 max-w-3xl mx-auto text-lg text-foreground/70" /* Increased mt-6 to mt-12 */
           >
-            <div className="glass px-6 py-4 rounded-xl backdrop-blur-sm">
-              {" "}
-              {/* Increased padding */}I have published to srilanka's first
-              computer vision based mobile app to play store . (Currently In
-              Review State)
-            </div>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
