@@ -203,8 +203,7 @@ const HeroSection: React.FC = () => {
                       <path d="M2 16h2"></path>
                     </svg>
                     <span className="text-foreground">
-                      Published Sri Lanka's first computer vision based mobile
-                      app to Play Store
+                      Published Sri Lanka’s first computer vision based game on play store
                     </span>
                   </div>
                 </motion.div>
