@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
     },
   };
 
-  const text = "Hi! I am ";
+  const text = "Hi !  I am ";
   const nameText = "Dileepa Peiris";
   const desc =
     "Software engineering undergraduate with passion for creating efficient solutions to complex problems.";
