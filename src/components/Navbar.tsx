@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
@@ -35,7 +34,10 @@ const Navbar: React.FC = () => {
         const sectionHeight = (section as HTMLElement).offsetHeight;
         const sectionId = section.getAttribute("id") || "";
 
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
           setActiveSection(sectionId);
         }
       });
@@ -77,7 +79,9 @@ const Navbar: React.FC = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent"
+        scrolled
+          ? "bg-background/80 backdrop-blur-md border-b"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -86,10 +90,26 @@ const Navbar: React.FC = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2, ease: "easeInOut" }}
-              className="cursor-pointer"
+              className="cursor-pointer flex items-center"
             >
-              <ScrollLink to="home" smooth={true} duration={500} className="flex items-center">
-                <span id="logo-text" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
+              <ScrollLink
+                to="home"
+                smooth={true}
+                duration={500}
+                className="flex items-center"
+              >
+                {/* Profile Image - Increased size */}
+                <div className="w-10 h-10 sm:w-12 sm:h-12 mr-3 rounded-full overflow-hidden border-2 border-primary/20 shadow-md">
+                  <img
+                    src="/profile-image.png"
+                    alt="Dileepa's Profile"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <span
+                  id="logo-text"
+                  className="text-xl font-bold text-foreground hover:text-primary transition-colors"
+                >
                   dileepa.dev
                 </span>
               </ScrollLink>
@@ -106,7 +126,9 @@ const Navbar: React.FC = () => {
                 offset={-100}
                 duration={500}
                 className={`relative text-sm font-medium transition-colors cursor-pointer hover:text-primary ${
-                  activeSection === item.href ? "text-primary" : "text-foreground/80"
+                  activeSection === item.href
+                    ? "text-primary"
+                    : "text-foreground/80"
                 }`}
                 onSetActive={() => setActiveSection(item.href)}
               >
